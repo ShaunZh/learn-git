@@ -87,6 +87,16 @@
   可以使用`git checkout -b [newBranchName] [targetTagName]`在特定的标签上**创建一个新的分支**
   命令：`git checkout -b version2 v1.0.4`  ——`version2`是新的分支名，`v1.0.4`是需要检出的标签名
   执行该命令后，就会创建一个新的分支`version2`，该分支的内容就是标签`v.10.4`的内容
+## log
+了解本地仓库的历史记录
+- 列出全部提交记录
+  命令：`git log`
+- 列出指定作者提交的记录
+  命令：`git log --author=bob`  ——列出bob的提交记录
+- 将历史记录压缩成一行显示
+  命令：`git log --pretty=online`  
+- 查看`git log`帮助信息
+  命令：`git log --help`
 
 
   

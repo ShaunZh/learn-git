@@ -1,6 +1,6 @@
 ## git clone
 两种使用：
-* 创建一个本地仓库的克隆版本
+* 创建一个本地仓库的克隆版本  
 假如 仓库地址为：`/e/personal-workspace/learnGit`
 执行命令：`git clone /e/personal-workspace/learnGit` 就会将learnGit项目克隆在当前
 文件夹下
@@ -9,11 +9,11 @@
 
 ## 工作流
 理解三个概念： **工作区(Working Director)**、 **暂存区(Stage或者Index)**和 **HEAD**
-* 工作区(Working Director)
+* 工作区(Working Director)  
   就是本地项目目录
-* 暂存区(Stage/Index) 
+* 暂存区(Stage/Index)  
   就是一个缓存区域，临时保存你的文件改动
-* HEAD
+* HEAD  
   指的是当前"活跃的"分支的游标(或者称为指针)，因为git下可以创建多个分支，那么我们
   当前所处 那个分支就是由 `HEAD` 来指定的，**当使用 `git commit` 命令时，就会将文
   件推送到 `HEAD` 所指向的分支**。

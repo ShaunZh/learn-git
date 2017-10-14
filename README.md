@@ -82,6 +82,11 @@
   命令：`git push origin v1.0.3`  ——推送v1.0.3标签到远程服务器
   如果想要一次推送多个标签，可以使用如下
   命令：`git push origin --tags`
+- 检出标签
+  在Git中并不能真的检出一个标签，如果想要**工作目录与仓库中特定的标签版本完全一样**，
+  可以使用`git checkout -b [newBranchName] [targetTagName]`在特定的标签上**创建一个新的分支**
+  命令：`git checkout -b version2 v1.0.4`  ——`version2`是新的分支名，`v1.0.4`是需要检出的标签名
+  执行该命令后，就会创建一个新的分支`version2`，该分支的内容就是标签`v.10.4`的内容
 
 
   

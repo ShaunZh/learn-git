@@ -24,7 +24,6 @@
 - `git add`命令：将 **工作区** 文件的改动提交到 **暂存区**
 - `git commit`命令：将 **暂存区** 的内容提交到 **HEAD** 指向的分支上
 - `git push origin branch`命令：将 **HEAD** 指向的分支中的内容推送到远程服务器的
-   **branch** 分支上，branch 可以替换为任何已经存在的分支，主分支为：**master*8 
-      
+   **branch** 分支上，branch 可以替换为任何已经存在的分支，主分支为：**master**
 
 

@@ -1,20 +1,19 @@
 ## git clone
 两种使用：
-- 创建一个本地仓库的克隆版本
-
+* 创建一个本地仓库的克隆版本
 假如 仓库地址为：`/e/personal-workspace/learnGit`
 执行命令：`git clone /e/personal-workspace/learnGit` 就会将learnGit项目克隆在当前
 文件夹下
 
-- 从远程服务器克隆软件
+* 从远程服务器克隆软件
 
 ## 工作流
 理解三个概念： **工作区(Working Director)**、 **暂存区(Stage或者Index)**和 **HEAD**
-- 工作区(Working Director)
+* 工作区(Working Director)
   就是本地项目目录
-- 暂存区(Stage/Index) 
+* 暂存区(Stage/Index) 
   就是一个缓存区域，临时保存你的文件改动
-- HEAD
+* HEAD
   指的是当前"活跃的"分支的游标(或者称为指针)，因为git下可以创建多个分支，那么我们
   当前所处 那个分支就是由 `HEAD` 来指定的，**当使用 `git commit` 命令时，就会将文
   件推送到 `HEAD` 所指向的分支**。
@@ -99,7 +98,18 @@
 - 查看`git log`帮助信息
   命令：`git log --help`
 
+## 替换本地改动
+* 如果操作不当，可以使用如下命令换掉本地改动：
+  命令：`git checkout -- <filename>`  ——执行该命令后，会使用HEAD中的最新内容来替换掉
+  工作区指定的文件，**已添加到暂存区的改动以及新文件都不会收到影响**
 
+* 如果想放弃在本地的所有改动与提交，可以从服务器上获取到最新版本历史，并将本地主分支指向它
+  命令：首先拉取最新版本 `git fetch origin`，然后将本地分支指向它，如下
+  命令：`git reset --hard origin/master`
+
+## 实用小贴士
+* 內建的图形化git：
+  命令
   
 
 
